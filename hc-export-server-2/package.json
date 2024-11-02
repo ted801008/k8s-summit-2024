@@ -1,0 +1,17 @@
+{
+  "name": "chart-exporter",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "cdn": "node src/cdn.js",
+    "server": "highcharts-export-server --enableServer 1 --HIGHCHARTS_CDN_URL http://",
+    "format": "prettier --check .",
+    "format:fix": "npm run format -- --write",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "highcharts": "^11.4.8",
+    "highcharts-export-server": "^4.0.2"
+  }
+}
